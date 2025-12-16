@@ -82,11 +82,11 @@ All required packages are listed in `requirements.txt`. Key packages include:
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                     User Interface Layer                     │
-│  ┌─────────────────┐              ┌──────────────────┐     │
-│  │   Streamlit     │              │   FastAPI REST   │     │
-│  │   Web UI        │              │   Endpoint       │     │
-│  └────────┬────────┘              └────────┬─────────┘     │
+│                     User Interface Layer                    │
+│  ┌─────────────────┐              ┌──────────────────┐      │
+│  │   Streamlit     │              │   FastAPI REST   │      │
+│  │   Web UI        │              │   Endpoint       │      │
+│  └────────┬────────┘              └────────┬─────────┘      │
 └───────────┼──────────────────────────────────┼──────────────┘
             │                                  │
             └──────────────────┬───────────────┘
@@ -95,11 +95,11 @@ All required packages are listed in `requirements.txt`. Key packages include:
 │                  Orchestration Layer (LangChain)           │
 │  ┌──────────────────────────────────────────────────────┐  │
 │  │  ConversationalRetrievalChain                        │  │
-│  │  ├─ Memory: ConversationBufferMemory               │  │
-│  │  ├─ Retriever: Chroma Vector Store                 │  │
-│  │  └─ LLM: ChatGroq                                  │  │
+│  │  ├─ Memory: ConversationBufferMemory                 │  │
+│  │  ├─ Retriever: Chroma Vector Store                   │  │
+│  │  └─ LLM: ChatGroq                                    │  │
 │  └──────────────────────────────────────────────────────┘  │
-└──────────────────────────────────────────────────────────────┘
+└────────────────────────────────────────────────────────────┘
             │                        │
     ┌───────┴────────┐       ┌───────┴────────┐
     │                │       │                │
@@ -110,7 +110,7 @@ All required packages are listed in `requirements.txt`. Key packages include:
 └────────────┘  └──────────┘  └────────────┘
     │                              │
     │                         ┌────▼──────────┐
-    │                         │  Data Layer    │
+    │                         │  Data Layer   │
     │                         │ ┌────────────┐│
     │                         │ │vector_db_  ││
     │                         │ │dir/        ││
