@@ -1,3 +1,13 @@
+# Chaneg "Company Name" to the actual company name you are building the chatbot for.
+# Throughout the code, replace "Company Name" with the actual name.
+# This is a FastAPI backend combined with a Streamlit frontend for a chatbot using LangChain and Groq LLM.
+# You should have a config.json file in the same directory with your GROQ_API_KEY.
+# Make sure to install all required packages:
+# pip install requirements.txt and the requirements.txt should include:
+# fastapi, uvicorn, pydantic, streamlit, langchain, langchain-huggingface, langchain-chroma, langchain-groq, fpdf
+# To run the project:
+# - Run streamlit: streamlit run main.py
+
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 import uvicorn
