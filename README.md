@@ -104,29 +104,20 @@ All required packages are listed in `requirements.txt`. Key packages include:
     ┌───────┴────────┐                        |
     │                │                        |  
 ┌───▼────────┐  ┌───▼──────┐            ┌─────▼──────┐
-│  Embedding │  │  Groq    │            │  Chroma    │
-│  Model     │  │  LLM     │            │  Vector DB │
-│ (HF)       │  │          │            │  (Persist) │
+│  Embedding │  │  Groq    │            │ Chroma     │
+│  Model     │  │  LLM     │            │ Vector DB  │
+│ (HF)       │  │          │            │ (Persist)  │
 └────────────┘  └──────────┘            └────────────┘
-    │                                         │
-    │                                  ┌──────▼────────┐
-    │                                  │  Data Layer   │
-    │                                  │ ┌────────────┐│
-    │                                  │ │vector_db_  ││
-    │                                  │ │dir/        ││
-    │                                  │ │chroma.db   ││
-    │                                  │ └────────────┘│
-    │                                  └───────────────┘
-    │
-    └─────────────────────────┐
-                              │
-                         ┌────▼──────────┐
-                         │ Document Layer│
-                         │ ┌────────────┐│
-                         │ │data/       ││
-                         │ │*.pdf       ││
-                         │ └────────────┘│
-                         └───────────────┘
+      │                                       |
+      └────────────┐                  ┌───────▼────────┐
+                   │                  │   Data Layer   │
+           ┌───────▼───────┐          │ ┌────────────┐ │
+           │ Document Layer│          │ │vector_db_  │ │
+           │ ┌───────────┐ │          │ │dir/        │ │
+           │ │data/      │ │          │ │chroma.db   │ │
+           │ │*.pdf      │ │          │ └────────────┘ │
+           │ └───────────┘ │          └────────────────┘
+           └───────────────┘
 ```
 
 ### Workflow
